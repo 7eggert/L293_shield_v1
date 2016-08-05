@@ -58,6 +58,7 @@
 #include <L293_shield_v1.h>
 
 void setup() {
+  pinMode(13,OUTPUT);
   digitalWrite(13, 1);
   L293.DCMotor_set(0, L293.dir_forward);
   L293.DCMotor_set(1, L293.dir_forward);
