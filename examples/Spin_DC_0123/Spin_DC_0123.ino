@@ -93,7 +93,7 @@ void slide(const int m0)
   // others at rest
   const int m1 = (m0+1) & 3;
   const int m2 = (m0+2) & 3;
-  const int m3 = (m0+2) & 3;
+  const int m3 = (m0+3) & 3;
   digitalWrite(13, m0 & 1);
   L293.DCMotor_set(m1, L293.dir_rewind);
   L293.DCMotor_set(m3, L293.dir_forward);
